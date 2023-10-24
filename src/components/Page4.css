@@ -1,0 +1,123 @@
+.main-div{
+    /* border: 1px solid #D8D8D8; */
+    background: #ED1B24  ;
+    background-size: cover;
+    display: block;
+    box-shadow: 0px 4px 10px 2px rgba(158, 158, 158, 0.25);
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    position: relative;
+}
+
+.inner-div{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: 1px solid #D8D8D8;
+    opacity: .1;
+    background:url("src/assets/background1.png")  , lightgray -195.444px -220.089px / 127.145% 156.506% no-repeat;
+    box-shadow: 0px 4px 10px 2px rgba(158, 158, 158, 0.25);
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: 1;
+    
+}
+.info{
+    position: absolute;
+    top: 04.3vh;
+    left: 4.3vw;
+    z-index: 4;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 133.2%; /* 42.624px */
+}
+.scrollmenu {
+    display: flex;
+    flex-direction: row;
+    width: 90vw;        
+    padding-bottom: 5vh;
+    overflow-x: auto;
+    
+    
+
+    column-gap: 3vw;
+    
+  }
+.object{
+    width: 29.5vw;
+    height: 72.7vh;
+    flex-shrink: 0;
+    border-radius: 0px 60px;
+    background: #FFF;
+    box-shadow: 5px 5px 25px 6px rgba(238, 238, 238, 0.23);
+    
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.scrollmenu::-webkit-scrollbar {
+    display: none;
+}
+.object>img{
+    
+    top: 0;
+    left: 0;
+    width: 29.5vw;
+    height: 35vh;
+    border-radius: 0px 60px;
+    background:  lightgray 50% / cover no-repeat;
+    box-shadow: 5px 5px 25px 6px rgba(238, 238, 238, 0.23);
+}
+.object>h1{
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    margin-left: 1vw;
+    color: #002A54;
+
+    font-family: Poppins;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    
+    text-transform: capitalize;
+    width: 25vw;
+    
+}
+.object>p{
+    color: #002A54;
+    width: 25vw;
+    margin-left: 1vw;
+    font-family: Poppins;
+    margin-top: 0;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    
+    text-transform: capitalize;
+
+}
+.object>button{
+    color: #ED1B24;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 133.2%; /* 26.64px */
+    text-transform: capitalize;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    bottom: 3vh;
+    right: 2vw;
+    cursor: pointer;
+}

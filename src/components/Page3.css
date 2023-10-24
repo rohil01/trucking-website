@@ -1,0 +1,123 @@
+.main--box{
+    background: linear-gradient(180deg, #0B2952 0%, #2A548E 100%);
+    padding-bottom: 10px;
+    padding-left: 4.3vw;
+    margin-top: 0;
+    padding-top: 3vw;
+}
+.title{
+    padding-left: 0;
+    margin: 0;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 133.2%; /* 42.624px */
+}
+.title2{
+    color: #FFF;
+    padding-left: 0;
+    font-family: Poppins;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 133.2%; /* 53.28px */
+    padding-left: 2vw;
+    margin-bottom: 0;
+}
+.span1{
+    color: #ED1B24;
+
+}
+.para1{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 133.2%; /* 26.64px */
+    text-transform: lowercase;
+    padding-left: 2vw;
+    width: 63vw;
+    margin-bottom: 4vw;
+}
+.grid-container{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.grid-object{
+    border-radius: 0px 60px;
+    background: #FFF;
+    width: 425px;
+    height: 558px;
+    flex-shrink: 0;
+    transition: .5s;
+    box-shadow: 5px 5px 25px 6px rgba(238, 238, 238, 0.23);
+    display: flex;
+    flex-direction: column;
+    padding-left: 1vh;
+    padding-top:2vh;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    margin-right: 5vh;
+    margin-bottom: 5vh;
+}
+.arrow-img{
+    transition: .2s;
+}
+.grid-object:hover {
+    background: #ED1B24;
+    color: white;
+    fill: white;
+}
+/* .grid-object>p:hover{
+    fill: white;
+    color: white;
+} */
+
+/* svg:hover{
+    fill: white;
+} */
+/* .arrow-img:hover{
+    fill: white;
+} */
+.grid-object> h1{
+    
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 133.2%; /* 31.968px */
+    text-transform: capitalize;
+    transition: .1s;
+}
+.icon{
+    width: 223px;
+    height: 152.579px;
+    flex-shrink: 0;
+    position: relative;
+    right: 120px;
+    transition: .3s;
+}
+.grid-object>p{
+    
+    font-family: Poppins;
+    text-align: left;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 161.2%; /* 25.792px */
+    text-transform: capitalize;
+    width: 395px;
+    height: 186px;
+    flex-shrink: 0;
+    position: relative;
+    transition: .1s;
+}
+.grid-object>svg{
+    padding-left: 250px;
+    
+}

@@ -1,0 +1,206 @@
+@import "react-slideshow-image/dist/styles.css";
+
+body {
+	background-color: #f8fafc;
+    margin: 0;
+    
+}
+
+.container {
+    height: 100vh;
+    
+}
+.navigation-container{  
+    position: absolute;
+    margin: 0;
+    right: 60px;
+    top: 43px;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: flex-end;
+}   
+
+.callus--container{
+    display: inline-flex;
+    margin: 0;
+    padding: 10px;
+}
+
+.callus--desc{
+    color: #FFF;
+    margin-left: 15px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    
+}
+
+.callus--desc > p{
+    margin: 0;
+}
+
+.nav--1 , .nav--2{
+    display: inline-flex;
+    padding: 9px 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav--1>button {
+    background: none;
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: none;
+    transition: s;
+    padding: 0;
+    cursor: pointer;
+}
+
+
+.nav--2>button {
+    background: none;
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: none;
+    transition: s;
+    padding: 0;
+    cursor: pointer;
+}
+.intermodal{
+    
+    
+    border-radius: 7px;
+    background: rgba(237, 27, 36, 0.55) !important;
+    
+    
+    padding-top: 6px !important;
+    padding-bottom: 6px !important;
+    padding-left: 10px !important; 
+    padding-right: 10px !important;
+}
+.nav--1>button:hover , .nav--2>button:hover {
+    font-weight: 600;
+}
+
+.nav--1::before {
+    display: inline-flex;
+    content: attr(button);
+    font-weight: 600;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    font-family: Poppins;
+    font-size: 16px;
+}
+
+.each-slide-effect {
+
+	
+    &::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        
+        background-image: linear-gradient(270deg, rgba(1, 3, 0, 0.86) 0%, rgba(36, 36, 36, 0.48) 50.31%, rgba(255, 255, 255, 0.00) 100%);
+    }
+}
+
+.each-slide-effect > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+.each-slide-effect span {
+  padding: 20px;
+  font-size: 20px;
+  background: #efefef;
+  text-align: center;
+}
+
+  .indicators{
+    position: absolute;
+    bottom: 20px;
+    margin: 0;
+    padding: 0;
+    width: 17vh;
+    justify-content: space-between !important;
+    left: 45.5vw;
+  }
+  .indicator.active > svg{
+    fill: rgba(104, 131, 227, 0.50) ;
+
+
+  }
+  .slide-section-heading{
+    color: #FFF;
+    position: absolute;
+    margin: 0;
+    right: 60px;
+
+    text-align: right;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    font-family: Poppins;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 133.2%; /* 63.936px */
+    width: 801px;
+  }
+  .slide-section-text{
+    color: #FFF;
+    position: absolute;
+    right: 60px;
+    top: 58vh;
+    width: 623px;
+
+    text-align: right;
+    text-shadow: 0px 2px 4px rgba(255, 255, 255, 0.25);
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 136.7%; /* 32.808px */
+
+  }
+  .slide-section-link{
+    color: #FFF;
+    position: absolute;
+    right: 60px;
+    top: 72vh;
+    width: 623px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    text-align: right;
+    line-height: normal;
+    
+    text-transform: uppercase;
+
+  }
+  a{
+    text-decoration: none;
+  }
